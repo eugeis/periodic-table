@@ -1,0 +1,11 @@
+<div class="{{ .group }} box">
+	<div class="keyword">{{ .keyword }}</div>
+	<div class="book">
+		<div class="year">{{ if .yearTo }}{{ .year }}-{{.yearTo}}{{ else }}{{.year}}{{ end }}</div>
+		<div class="chapters">{{ .chapters }}</div>
+		<div class="verses">{{ .verses }}</div>
+		<div class="abbreviation">{{ .abbr }}<div class="num">{{ .num }}</div></div>
+		<div class="keyVerse">{{ .keyVerse }}</div>
+		<div class="author">{{ .author }}</div>
+	</div>
+</div>

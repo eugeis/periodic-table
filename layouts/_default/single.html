@@ -1,0 +1,18 @@
+{{ define "main" }}
+<h1 class="periodicTable">{{.Title}}</h1>
+{{ $pt := (index .Site.Data .Params.periodicTable) }}
+<div>
+    {{ range $pt.elements }}
+        {{ partial "book.html" . }}
+    {{end}}
+</div>
+<div class="group">
+	<hr class="separator"/>
+    {{ partial "book.html" $pt.legende }}
+    {{ range $groupKey, $group := $pt.groups }}
+        <div class="groupLegende {{ $groupKey }}">
+            {{ $group.name }}
+        </div>
+    {{end}}
+</div>
+{{ end }}
