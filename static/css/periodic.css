@@ -4,11 +4,11 @@ body {
 }
 
 .periodicTable { text-align: center; margin: 0; padding: 0; }
-/* .gospel { background: #9ad3c5; }
+.gospel { background: #9ad3c5; }
 .history { background: #f1c6e9; }
 .paulEpistels { background: #99b6e8; }
 .commonEpistels { background: #e1f2d0; }
-.revelation { background: #eacdbf; } */
+.revelation { background: #eacdbf; }
 .group { position: relative; clear: both; }
 .groupLegende { 
     position: relative; width: 250px; height: 20px;
