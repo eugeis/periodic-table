@@ -1,4 +1,5 @@
 {{ define "main" }}
+    {{- partial "language-selector.html" . -}}
     {{.Content}}
     {{ range .Pages }}
         <div style="border: 1px solid black; margin:10px; padding:10px; ">
